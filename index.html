@@ -41,19 +41,25 @@
       .card-container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        border-radius: 24px;
+        border: 3px dashed darkcyan;
       }
       .card {
-
+        /* width: 100%; */
+        border: 2px solid saddlebrown;
+        position: relative;
       }
       .title-card {
         grid-column: span 2;
         background-color: #F3F4F6;
         background-image: url('../resources/Background_decor.svg');
-        background-position: start;
+        background-position: left;
         background-repeat: no-repeat;
         background-size: contain;
         /* display: flex;
         align-items: center; */
+        /* grid-row: span 2; */
+        padding: 36px;
       }
       .title-card .sub-title {
         color: #263FA9;
@@ -67,15 +73,20 @@
         color: #394150;
       }
       .card figure {
-
+        /* width: 100%; */
+        border: 1px solid blueviolet;
       }
       .card figure img {
-
+        width: 100%;
+        height: 100%;
       }
       .card figure figcaption {
         font-size: 1.25rem;
         font-weight: 600;
         color: #FFFEFE;
+        position: absolute;
+        bottom: 32px;
+        left: 32px;
       }
       .card figure figcaption .name {
 
@@ -95,17 +106,19 @@
         align-items: end;
         /* justify-content: center; */
         color: #394150;
-         background-color: #F3F4F6;
-        background-image: url('../resources/Background_decor.svg');
-        background-position: start;
+         /* background-color: #F3F4F6;
+        background-image: url('../resources/Background_decor@2x.png');
+        background-position: left top;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: contain; */
+        /* grid-row: span 2; */
+                padding: 36px;
       }
       .see-all span {
-
+        margin-right: 5px;
       }
       .see-all span img {
-
+        /* margin: 5px 10px 0; */
       }
       .card-5 {
         background-color: #9DC4F8;
@@ -160,7 +173,7 @@
   </div>
           <div class="card see-all">
             <span>See all members</span>
-            <span><img src="resources/arrow up right.svg" alt="arrow up right"></span>
+            <img src="resources/arrow up right.svg" alt="arrow up right">
           </div>
           <div class="card card-5">
             <figure>
@@ -183,9 +196,11 @@
           <div class="card card-7">
             <figure>
               <img src="resources/person_5@2x.png" alt="person_5@2x" width="284" height="288">
+              <figcaption>
+                <h2 class="name">Noah Conti</h2>
+        <p class="designation">Content Creator</p>
+              </figcaption>
             </figure>
-            <h2 class="name">Noah Conti</h2>
-    <p class="designation">Content Creator</p>
   </div>
         </div>
       </section>
