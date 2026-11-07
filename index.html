@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <title>Meet the Team Section | devChallenges.io</title>
+
+    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
+    <style>
+      
+.outfit-normal {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        font-size: 1rem;
+      }
+
+      .card-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .card {
+
+      }
+      .title-card {
+        grid-column: span 2;
+        background-color: #F3F4F6;
+        background-image: url('../resources/Background_decor.svg');
+        background-position: start;
+        background-repeat: no-repeat;
+        background-size: contain;
+        /* display: flex;
+        align-items: center; */
+      }
+      .title-card .sub-title {
+        color: #263FA9;
+      }
+      .title-card .title {
+        font-size: 2.5rem;
+        font-weight: 500;
+        color: #000000;
+      }
+      .title-card .description {
+        color: #394150;
+      }
+      .card figure {
+
+      }
+      .card figure img {
+
+      }
+      .card figure figcaption {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #FFFEFE;
+      }
+      .card figure figcaption .name {
+
+      }
+      .card figure figcaption .designation {
+
+      }
+      .card-2 {
+        background-color: #C1B6F8;
+      }
+      .card-3 {
+        background-color: #EDACD2;
+      }
+      .see-all {
+        font-weight: 500;
+        display: flex;
+        align-items: end;
+        /* justify-content: center; */
+        color: #394150;
+         background-color: #F3F4F6;
+        background-image: url('../resources/Background_decor.svg');
+        background-position: start;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .see-all span {
+
+      }
+      .see-all span img {
+
+      }
+      .card-5 {
+        background-color: #9DC4F8;
+      }
+      .card-6 {
+        background-color: #F8D8B0;
+      }
+      .card-7 {
+        background-color: #86E7D4;
+      }
+
+      .author-info {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 16px;
+        color: rgb(55, 65, 81);
+      }
+
+      .author-info a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body class="outfit-normal">
+    <header></header>
+
+    <main>
+      <section class="team">
+        <div class="card-container">
+          <div class="card title-card">
+            <p class="sub-title">Our team</p>
+    <h1 class="title">Meet the brain</h1>
+    <p class="description">We are proud to have them as part of our community and look forward to continuing to push the boundaries of what's possible in the world of digital art.</p>
+  </div>
+          <div class="card card-2">
+            <figure>
+              <img src="resources/person_1@2x.png" alt="person_1@2x" width="284" height="288">
+              <figcaption>
+                <h2 class="name">Liam Novak</h2>
+    <p class="designation">Software Engineer</p>
+  </figcaption>
+            </figure>
+  </div>
+          <div class="card card-3">
+            <figure>
+              <img src="resources/person_2@2x.png" alt="person_2@2x" width="284" height="288">
+              <figcaption>
+                <h2 class="name">Sophia Moretti</h2>
+    <p class="designation">Business Development Manager</p>
+              </figcaption>
+            </figure>
+  </div>
+          <div class="card see-all">
+            <span>See all members</span>
+            <span><img src="resources/arrow up right.svg" alt="arrow up right"></span>
+          </div>
+          <div class="card card-5">
+            <figure>
+              <img src="resources/person_3@2x.png" alt="person_3@2x" width="284" height="288">
+              <figcaption>
+                <h2 class="name">Ethan Rossi</h2>
+    <p class="designation">Business Development Manager</p>
+              </figcaption>
+            </figure>
+</div>
+          <div class="card card-6">
+            <figure>
+              <img src="resources/person_4@2x.png" alt="person_4@2x" width="284" height="288">
+              <figcaption>
+                <h2 class="name">Isabella Ricci</h2>
+    <p class="designation">UX Designer</p>
+              </figcaption>
+            </figure>
+  </div>
+          <div class="card card-7">
+            <figure>
+              <img src="resources/person_5@2x.png" alt="person_5@2x" width="284" height="288">
+            </figure>
+            <h2 class="name">Noah Conti</h2>
+    <p class="designation">Content Creator</p>
+  </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <div class="author-info">
+      Coded by <a href="#">Your Name Here</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </div>
+  </body>
+</html>
