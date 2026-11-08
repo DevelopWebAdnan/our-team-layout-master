@@ -1,444 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="icon"
-      href="resources/favicon.ico"
-      type="image/x-icon"
-      sizes="96x96"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
-    <title>Meet the Team Section | devChallenges.io</title>
+  <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96" />
 
-    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
-    <style>
-      
-.outfit-normal {
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
+  <title>Meet the Team Section | devChallenges.io</title>
 
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+  <style>
+    .outfit-normal {
+      font-family: "Outfit", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
 
-      body {
-        height: 100vh;
-        font-size: 1rem;
-      }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body {
+      height: 100vh;
+      font-size: 1rem;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(12, 1fr);
+      border-radius: 24px;
+      background-image: url('../resources/Background_decor.svg');
+      background-position: top left;
+      background-repeat: no-repeat;
+      background-size: auto;
+      margin: 80px;
+      background-color: #F3F4F6;
+    }
+
+    .card {
+      position: relative;
+      grid-row: span 6;
+    }
+
+    .title-card {
+      grid-column: 1/span 6;
+      padding: 36px;
+      order: 1;
+    }
+
+    .title-card-content {
+      max-width: 480px;
+    }
+
+    .title-card .sub-title {
+      color: #263FA9;
+    }
+
+    .title-card .title {
+      font-size: 2.5rem;
+      font-weight: 500;
+      color: #000000;
+      margin: 16px 0;
+    }
+
+    .title-card .description {
+      color: #394150;
+    }
+
+    .card figure {
+      height: 100%;
+    }
+
+    .card figure img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .card figure figcaption {
+      color: #FFFEFE;
+      position: absolute;
+      bottom: 20px;
+      left: 24px;
+    }
+
+    .card figure figcaption .name {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .card-2 {
+      background-color: #C1B6F8;
+      grid-column: 7/span 3;
+      background-image: url('../resources/Gradient.svg');
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: contain;
+      order: 2;
+    }
+
+    .card-3 {
+      background-color: #EDACD2;
+      grid-column: 10/ span 3;
+      background-image: url('../resources/Gradient.svg');
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: contain;
+      border-radius: 0 24px 0 0;
+      order: 3;
+    }
+
+    .see-all {
+      font-weight: 500;
+      display: flex;
+      align-items: end;
+      color: #394150;
+      padding: 36px;
+      grid-column: 1/span 3;
+      order: 4;
+    }
+
+    .see-all span {
+      margin-right: 5px;
+    }
+
+    .card-5 {
+      background-color: #9DC4F8;
+      grid-column: 4/span 3;
+      background-image: url('../resources/Gradient.svg');
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: contain;
+      order: 5;
+    }
+
+    .card-6 {
+      background-color: #F8D8B0;
+      grid-column: 7/span 3;
+      background-image: url('../resources/Gradient.svg');
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: contain;
+      order: 6;
+    }
+
+    .card-7 {
+      background-color: #86E7D4;
+      grid-column: 10/span 3;
+      background-image: url('../resources/Gradient.svg');
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: contain;
+      border-radius: 0 0 24px 0;
+      ;
+      order: 7;
+    }
+
+    /* hover effects */
+    .see-all span:hover {
+      margin-right: 25px;
+    }
+
+    .card-container:hover,
+    .card-2:hover,
+    .card-3:hover,
+    .card-5:hover,
+    .card-6:hover,
+    .card-7:hover {
+      background-image: none;
+    }
+
+    .card figure figcaption .designation:hover {
+      outline: 1px solid #263FA9;
+    }
+
+    .author-info {
+      font-size: 14px;
+      text-align: center;
+      margin-top: 16px;
+      color: rgb(55, 65, 81);
+    }
+
+    .author-info a {
+      text-decoration: none;
+    }
+
+    /* responsive styles */
+    @media screen and (max-width: 640px) {
       .card-container {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(12, 1fr);
-        border-radius: 24px;
-        /* border: 3px dashed darkcyan; */
-        /* background-image: url('../resources/Background_decor.svg'); */
-        background-image: url('../resources/Background_decor@2x.png');
-        background-position: top left;
-        background-repeat: no-repeat;
-        background-size: auto;
-        margin: 72px;
-                background-color: #F3F4F6;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin: 50px 40px;
       }
+
       .card {
-        /* width: 100%; */
-        /* border: 2px solid saddlebrown; */
-        position: relative;
-        grid-row: span 6;
-        /* height: 100%; */
-        /* min-width: 284px; */
-        /* min-height: 288px; */
-        /* border-radius: 24px; */
+        grid-row: span 1;
+        min-height: 288px;
+        border-radius: 0;
       }
+
       .title-card {
-        grid-column: 1/span 6;
-        /* background-color: #F3F4F6;
-        background-image: url('../resources/Background_decor.svg'); */
-        /* background-image: url('../resources/Background_decor@2x.png'); */
-        /* background-position: bottom left;
-        background-repeat: no-repeat;
-        background-size: auto; */
-        /* display: flex;
-        align-items: center; */
-        /* grid-row: 1/span 6; */
-        padding: 36px;
-        /* max-width: 600px; */
+        grid-column: 1;
         order: 1;
       }
-      .title-card .sub-title {
-        color: #263FA9;
-      }
-      .title-card .title {
-        font-size: 2.5rem;
-        font-weight: 500;
-        color: #000000;
-        margin: 16px 0;
-      }
-      .title-card .description {
-        color: #394150;
-      }
-      .card figure {
-        /* width: 100%; */
-        /* border: 1px solid blueviolet; */
-        /* width: 284px;
-        height: 288px; */
-        height: 100%;
-        /* border-radius: 24px; */
-      }
-      .card figure img {
-        width: 100%;
-        height: 100%;
-        /* border-radius: 24px; */
-      }
-      .card figure figcaption {
-        font-size: 1.25rem;
-        /* font-weight: 600; */
-        color: #FFFEFE;
-        position: absolute;
-        bottom: 32px;
-        left: 32px;
-      }
-      .card figure figcaption .name {
-        /* border: 1px solid salmon; */
-        font-weight: 600;
-      }
-      .card figure figcaption .designation {
-        /* border: 1px solid aqua; */
-      }
+
       .card-2 {
-        background-color: #C1B6F8;
-        grid-column: 7/span 3;
-        /* grid-row: 1/span 6; */
-        background-image: url('../resources/Gradient.svg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        grid-column: 1;
         order: 2;
       }
+
       .card-3 {
-        background-color: #EDACD2;
-        grid-column: 10/ span 3;
-        /* grid-row: 1/span 6; */
-         background-image: url('../resources/Gradient.svg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: 0 24px 0 0;
+        grid-column: 1;
         order: 3;
       }
-      /* .card-3 figure {
-        border-radius: 0 24px 0 0;
-      }
-      .card-3 figure img {
-        border-radius: 0 24px 0 0;
-      } */
+
       .see-all {
-        font-weight: 500;
-        display: flex;
-        align-items: end;
-        /* justify-content: center; */
-        color: #394150;
-         /* background-color: #F3F4F6;
-        background-image: url('../resources/Background_decor@2x.png');
-        background-position: left;
-        background-repeat: no-repeat;
-        background-size: auto; */
-        /* grid-row: 7/span 6; */
-                padding: 36px;
-                grid-column: 1/span 3;
-        order: 4;
-      }
-      .see-all span {
-        margin-right: 5px;
-      }
-      .see-all span img {
-        /* margin: 5px 10px 0; */
-      }
-      .card-5 {
-        background-color: #9DC4F8;
-        grid-column: 4/span 3;
-        /* grid-row: 7/span 6; */
-         background-image: url('../resources/Gradient.svg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        order: 5;
-      }
-      .card-6 {
-        background-color: #F8D8B0;
-        grid-column: 7/span 3;
-        /* grid-row: 7/span 6; */
-         background-image: url('../resources/Gradient.svg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        order: 6;
-      }
-      .card-7 {
-        background-color: #86E7D4;
-        grid-column: 10/span 3;
-        /* grid-row: 7/span 6; */
-         background-image: url('../resources/Gradient.svg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: 0 0 24px 0;;
+        grid-column: 1;
         order: 7;
       }
 
-      .author-info {
-        font-size: 14px;
-        text-align: center;
-        margin-top: 16px;
-        color: rgb(55, 65, 81);
-      }
-
-      .author-info a {
-        text-decoration: none;
-      }
-
-      /* responsive styles */
-      @media screen and (max-width: 640px) {
-       .card-container {
-        /* display: grid; */
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        /* border-radius: 24px;
-        border: 3px dashed darkcyan; */
-         /* background-image: url('../resources/Background_decor@2x.png'); */
-        /* background-position: top left; */
-        /* background-repeat: no-repeat; */
-        /* background-size: auto; */
-        margin: 20px;
-                /* background-color: #F3F4F6; */
-      }
-      .card {
-        /* width: 100%; */
-        /* border: 2px solid saddlebrown; */
-        /* position: relative; */
-        grid-row: span 1;
-         /* min-width: 284px; */
-        min-height: 288px;
-        border-radius: 0;
-      } 
-      .title-card {
-        grid-column: 1;
-        /* background-color: #F3F4F6;
-        background-image: url('../resources/Background_decor.svg');
-        background-position: bottom left;
-        background-repeat: no-repeat;
-        background-size: auto;
-        padding: 36px; */
-        order: 1;
-      }
-      .card-2 {
-        /* background-color: #C1B6F8; */
-        grid-column: 1;
-        order: 2;
-      }
-      .card-3 {
-        /* background-color: #EDACD2; */
-        grid-column: 1;
-        order: 3;
-      }
-      .see-all {
-        /* font-weight: 500;
-        display: flex;
-        align-items: end;
-        color: #394150;
-         background-color: #F3F4F6;
-        background-image: url('../resources/Background_decor@2x.png');
-        background-position: left;
-        background-repeat: no-repeat;
-        background-size: auto;
-                padding: 36px; */
-                grid-column: 1;
-                order: 7;
-      }
       .card-5 {
-        /* background-color: #9DC4F8; */
         grid-column: 1;
         order: 4;
       }
+
       .card-6 {
-        /* background-color: #F8D8B0; */
         grid-column: 1;
         order: 5;
       }
+
       .card-7 {
-        /* background-color: #86E7D4; */
         grid-column: 1;
         order: 6;
       }
+    }
 
+    /* for tablet devices */
+    @media screen and (min-width: 641px) and (max-width: 1024px) {
+      .card-container {
+        margin: 50px 60px;
       }
 
-      /* for tablet devices */
-      @media screen and (min-width: 641px) and (max-width: 1024px) {
-       .card-container {
-        /* display: grid; */
-        /* grid-template-columns: repeat(12, 1fr); */
-        /* grid-template-rows: repeat(12, 1fr); */
-        /* border-radius: 24px; */
-        /* border: 3px dashed darkcyan; */
-         /* background-image: url('../resources/Background_decor@2x.png');
-        background-position: top left;
-        background-repeat: no-repeat;
-        background-size: auto; */
-        margin: 44px;
-                /* background-color: #F3F4F6; */
-      }
       .card {
-        /* width: 100%; */
-        /* border: 2px solid saddlebrown; */
-        /* position: relative; */
         grid-row: span 4;
-        /* height: 100%; */
-        /* min-width: 284px;
-        min-height: 288px; */
       }
+
       .title-card {
         grid-column: 1/span 12;
-        /* background-color: #F3F4F6; */
-        /* background-image: url('../resources/Background_decor.svg'); */
-        /* background-position: bottom left;
-        background-repeat: no-repeat;
-        background-size: auto; */
         padding: 36px;
-        /* order: 1; */
       }
+
       .card-2 {
-        /* background-color: #C1B6F8; */
         grid-column: 1/span 4;
-        /* order: 2; */
       }
+
       .card-3 {
-        /* background-color: #EDACD2; */
         grid-column: 5/ span 4;
-          /* background-image: url('../resources/Gradient.svg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover; */
         border-radius: 0;
-        /* order: 3; */
       }
+
       .see-all {
-        /* font-weight: 500;
-        display: flex;
-        align-items: end; */
-        /* color: #394150;
-         background-color: #F3F4F6;
-        background-image: url('../resources/Background_decor@2x.png');
-        background-position: left;
-        background-repeat: no-repeat;
-        background-size: auto; */
-                /* padding: 36px; */
-                grid-column: 1/span 4;
-                order: 5;
+        grid-column: 1/span 4;
+        order: 5;
       }
+
       .card-5 {
-        /* background-color: #9DC4F8; */
         grid-column: 9/span 4;
         order: 4;
       }
+
       .card-6 {
-        /* background-color: #F8D8B0; */
         grid-column: 5/span 4;
         order: 6;
       }
+
       .card-7 {
-        /* background-color: #86E7D4; */
         grid-column: 9/span 4;
         order: 7;
-      } 
       }
-    </style>
-  </head>
-  <body class="outfit-normal">
-    <header></header>
+    }
+  </style>
+</head>
 
-    <main>
-      <section class="team">
-        <div class="card-container">
-          <div class="card title-card">
+<body class="outfit-normal">
+  <header></header>
+
+  <main>
+    <section class="team">
+      <div class="card-container">
+        <div class="card title-card">
+          <div class="title-card-content">
             <p class="sub-title">Our team</p>
-    <h1 class="title">Meet the brain</h1>
-    <p class="description">We are proud to have them as part of our community and look forward to continuing to push the boundaries of what's possible in the world of digital art.</p>
-  </div>
-          <div class="card card-2">
-            <figure>
-              <img src="resources/person_1@2x.png" alt="person_1@2x" width="284" height="288">
-              <figcaption>
-                <h2 class="name">Liam Novak</h2>
-    <p class="designation">Software Engineer</p>
-  </figcaption>
-            </figure>
-  </div>
-          <div class="card card-3">
-            <figure>
-              <img src="resources/person_2@2x.png" alt="person_2@2x" width="284" height="288">
-              <figcaption>
-                <h2 class="name">Sophia Moretti</h2>
-    <p class="designation">Business Development Manager</p>
-              </figcaption>
-            </figure>
-  </div>
-          <div class="card see-all">
-            <span>See all members</span>
-            <img src="resources/arrow up right.svg" alt="arrow up right">
+            <h1 class="title">Meet the brain</h1>
+            <p class="description">We are proud to have them as part of our community and look forward to continuing to
+              push the boundaries of what's possible in the world of digital art.</p>
           </div>
-          <div class="card card-5">
-            <figure>
-              <img src="resources/person_3@2x.png" alt="person_3@2x" width="284" height="288">
-              <figcaption>
-                <h2 class="name">Ethan Rossi</h2>
-    <p class="designation">Business Development Manager</p>
-              </figcaption>
-            </figure>
-</div>
-          <div class="card card-6">
-            <figure>
-              <img src="resources/person_4@2x.png" alt="person_4@2x" width="284" height="288">
-              <figcaption>
-                <h2 class="name">Isabella Ricci</h2>
-    <p class="designation">UX Designer</p>
-              </figcaption>
-            </figure>
-  </div>
-          <div class="card card-7">
-            <figure>
-              <img src="resources/person_5@2x.png" alt="person_5@2x" width="284" height="288">
-              <figcaption>
-                <h2 class="name">Noah Conti</h2>
-        <p class="designation">Content Creator</p>
-              </figcaption>
-            </figure>
-  </div>
         </div>
-      </section>
-    </main>
+        <div class="card card-2">
+          <figure>
+            <img src="resources/person_1@2x.png" alt="person_1@2x" width="284" height="288">
+            <figcaption>
+              <h2 class="name">Liam Novak</h2>
+              <p class="designation">Software Engineer</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="card card-3">
+          <figure>
+            <img src="resources/person_2@2x.png" alt="person_2@2x" width="284" height="288">
+            <figcaption>
+              <h2 class="name">Sophia Moretti</h2>
+              <p class="designation">Business Development Manager</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="card see-all">
+          <span>See all members</span>
+          <img src="resources/arrow up right.svg" alt="arrow up right">
+        </div>
+        <div class="card card-5">
+          <figure>
+            <img src="resources/person_3@2x.png" alt="person_3@2x" width="284" height="288">
+            <figcaption>
+              <h2 class="name">Ethan Rossi</h2>
+              <p class="designation">Business Development Manager</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="card card-6">
+          <figure>
+            <img src="resources/person_4@2x.png" alt="person_4@2x" width="284" height="288">
+            <figcaption>
+              <h2 class="name">Isabella Ricci</h2>
+              <p class="designation">UX Designer</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="card card-7">
+          <figure>
+            <img src="resources/person_5@2x.png" alt="person_5@2x" width="284" height="288">
+            <figcaption>
+              <h2 class="name">Noah Conti</h2>
+              <p class="designation">Content Creator</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-
-    </footer>
-
+  <footer>
     <div class="author-info">
-      Coded by <a href="#">Your Name Here</a> | Challenge by
-      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
-        >devChallenges.io</a
-      >.
+      Coded by <a href="https://developwebadnan.github.io/web-dev-portfolio/">Adnan</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank">devChallenges.io</a>.
     </div>
-  </body>
+  </footer>
+
+</body>
+
 </html>
