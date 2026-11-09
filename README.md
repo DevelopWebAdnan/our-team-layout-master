@@ -1,98 +1,88 @@
-# DevChallenges.io - Meet the Team Section
 
-![Thumbnail for the Meet the Team Section coding challenge](./thumbnail.jpg)
+<h1 align="centerYour">Meet the Team Section | devChallenges</h1>
 
-## Welcome! 👋
+<div align="center">
+   Solution for a challenge <a href="https://devchallenges.io/challenge/meet-the-team-section-challenge" target="_blank">Meet the Team Section</a> from <a href="http://devchallenges.io" target="_blank">devChallenges.io</a>.
+</div>
 
-Welcome to this responsive web coding challenge.
+<div align="center">
+  <h3>
+    <a href="https://developwebadnan.github.io/our-team-layout-master/">
+      Demo
+    </a>
+    <span> | </span>
+    <a href="https://github.com/DevelopWebAdnan/our-team-layout-master">
+      Solution
+    </a>
+    <span> | </span>
+    <a href="https://devchallenges.io/challenge/meet-the-team-section-challenge">
+      Challenge
+    </a>
+  </h3>
+</div>
 
-[devChallenges.io](https://devchallenges.io/) challenges are designed to help you enhance your coding skills by building realistic projects.
+<!-- TABLE OF CONTENTS -->
 
-**Suggested Skills to practice: HTML and CSS**
+## Table of Contents
 
-## The challenge
+- [Overview](#overview)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
+- [Built with](#built-with)
+- [Features](#features)
+- [Contact](#contact)
 
-Your task is to create a web page that closely resembles the provided design.
+<!-- OVERVIEW -->
 
-You can use any tools or resources you like to complete this challenge. Each challenge is designed to practice different skills, so be sure to check the challenge description for more information.
+## Overview
 
-If you need help or have any questions, feel free to [join our community](https://github.com/orgs/devchallenges-io/discussions) and ask for support.
+![screenshot](https://i.ibb.co.com/TB6hJCBV/screencapture-developwebadnan-github-io-2026-11-09-15-46-10.png)
 
-## Where to find everything
+<!--
+Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
-Your goal is to build the project using the provided design. You can find the designs in the challenge editor once you start the challenge or in the `/design` folder. Please note that the `/design` folder may not include all the designs you need, so be sure to check the editor for more details.
+- What have you learned/improved?
+- Your wisdom? :)
+-->
+- I think I have improved on my skills on ordering grid items in a grid layout.
+- My wisdom is to use at least one pixel more for the media query rule for tablet devices (min-width: 641px)... than the media query rule for mobile devices (max-width: 640px) to fix the layout while making a site responsive, as stated in the below section. Or else, the style rules used in the media query rules for both the mobile and tablet devices may conflict when your device's screen size is 640px.
+### What I learned
 
-The designs are in JPG format, so you'll need to use your best judgment for styles such as `font-size`, `padding`, and `margin`. Additionally, spacing guides are available for each challenge, but access to them requires a [Pro membership](https://devchallenges.io/pro). With a Pro membership, you can also download the Figma design files.
+<!-- Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge. -->
+- I had confusion whether the order style rule was only applicable for flexbox, or also for grid. Later I found this style rule as a savior when I was facing challenge while ordering the cards for different devices. Using order style rule helped me order the cards according to the given designs in the provided design folder.
+- Besides, I had to fix the media query rule for the tablet device to fix the layout when the screen size was 640px. Because, I used (max-width: 640px) for mobile devices and (min-width: 640px)... for tablet devices. But when I changed the media query rule for tablet devices to (min-width: 641px)... the layout got fixed.
+- I thought that the file name for the background images that I used in my site had to begin in small letter to show in github deployment. So, I updated the resources folder as such. But finally after several failed attempts, I realized that the url links of all the background images used at the site was wrong. Fixing the url links saved me.
+### Useful resources
 
-All the required assets can be found in the `/resources` folder. You may need to optimize the assets as necessary.
+<!--
+- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+-->
+- [Solution Editor | devchallenges.io | devChallenges](https://devchallenges.io/editor/solution/70239) - The provided designs, resources, typography, color, and grid display helped me build the site, make it responsive, and use typography and spacing similar to the provided designs.
+### Built with
 
-For more information about the challenge, access the challenge editor on [devChallenges.io](https://devchallenges.io/challenges-dashboard).
+<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-## Steps to Complete the Challenge on devChallenges.io
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
 
-- [ ] Start by visiting [devChallenges.io](https://devchallenges.io/), navigate to the challenge page, and begin the challenge.
-- [ ] Once you have started the challenge, you will have access to the editor where you can download the necessary resources, check colors, fonts, and more.
-- [ ] Download the starter/resources, and if you are a Pro user, you can also download the Figma file.
-- [ ] Initialize the project as a Git repository.
-- [ ] Review the design and analyze the different versions for desktop, tablet, and mobile.
-- [ ] Plan your approach to the project by identifying reusable CSS classes and structuring your HTML content.
-- [ ] Define the base styles for your project, including font-family, font-size, and other general content styles.
-- [ ] Begin adding styles from the top of the page and work your way down, ensuring that each section is visually appealing and matches the provided design.
-- [ ] Optimize and resize the required assets from the `/resources` folder as necessary.
-- [ ] Test your project's responsiveness by previewing it on different devices and screen sizes.
-- [ ] Once you are satisfied with your implementation, deploy your project to a hosting platform such as GitHub Pages, Vercel, or Netlify.
-- [ ] Submit your solution on devchallenges.io and aim to pass the design comparison and performance tests.
-- [ ] Replace the default `README.md` file with a custom one that explains your project and reflects on your learning experience. You can use the provided `README-template.md` as a starting point.
-- [ ] Share your solution with the devChallenges.io community by tweeting [@devchallengesio](https://twitter.com/devchallengesio) and mentioning the repository and live URLs in your tweet. You can also share your solution on other social channels or write a blog post about your experience.
-- [ ] Seek feedback from the community by using the provided templates or asking specific questions about your implementation.
+## Features
 
-Good luck and enjoy building your project! 🚀
+<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-## Deploying your project
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges-dashboard) challenge.
+- The site has the following features:
+  - Used CSS grid to layout the cards in the cards container of the section.
+  - Responsive on mobile, laptop and desktop devices.
+  - Includes hover effects for interactivity.
+  - Uses svg image rather than png image when both are available, for faster loading speed.
+<!-- ## Acknowledgements -->
 
-Our recommended hosting options include:
+<!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+## Author
 
-You can choose any of these solutions or explore other trusted providers. For more information, please refer to our guide on [free hosting platforms](https://devchallenges.io/learn/1-fundamentals/free-hosting-for-web-projects).
-
-## Create your own `README.md`
-
-To use the Readme template, follow these steps:
-
-1. Open the `README-template.md` file in your text editor.
-2. Replace the placeholder content with your own project information.
-3. Customize the sections and headings to fit your project's needs.
-4. Add a detailed description of your project, including its purpose and features.
-5. Reflect on your learning experience and any challenges you encountered during development.
-6. Delete the original `README.md` file.
-7. Rename the `README-template.md` file to `README.md`.
-8. Save the changes and commit the updated `README.md` file to your repository.
-
-By following these instructions, you can create a customized `README.md` file that effectively communicates your project to others.
-
-## More guides
-
-Don't forget to check out the [devChallenges Curriculum](https://devchallenges.io/learn), which covers basic to advanced topics that are essential for your web development journey.
-
-## Sharing your solution
-
-There are several platforms where you can share your solution:
-
-1.  Tweet [@devchallengesio](https://x.com/devchallengesio) and mention **@devchallengesio**, including the repository and live URLs in your tweet. We would love to see what you have built and help spread the word.
-2.  Share your solution on other social channels such as LinkedIn and tag [devchallenges](https://www.linkedin.com/company/devchallenges).
-3.  Write a blog post about your experience building the project. Documenting your workflow, technical choices, and explaining your code is an excellent way to reinforce your learning. Popular platforms for writing include [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you have submitted it on the platform. Feel free to edit them and include specific questions when seeking feedback.
-
-The more specific your questions are, the more likely it is that another community member will provide feedback.
-
-## Feedback
-
-We value feedback and are always looking to improve our challenges and platform. If you have any suggestions or comments, please email us at hi\[at]devchallenges\[dot]io.
-
-This challenge is completely free. Please share it with anyone who would find it useful for practice.
-
-**Enjoy building!** 🚀
+- Website [My Portfolio](https://developwebadnan.github.io/web-dev-portfolio/)
+- GitHub [@DevelopWebAdnan](https://github.com/DevelopWebAdnan)
